@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/text_logo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:text="친구들의 사진과 동영상을 보려면 \n가입하세요."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="#838A91"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="또는"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="#838A91"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="300dp"
+                android:layout_height="0dp">
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/edt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="휴대폰 번호 또는 이메일 주소"
+                    android:layout_gravity="bottom"
+                    />
+
+                <Button
+                    android:padding="0dp"
+                    android:layout_gravity="bottom"
+                    android:backgroundTint="#6BA7E3"
+                    android:id="@+id/btn_idCheck"
+                    android:text="중복확인"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+
+
+
+
+
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/edt_name"
+            android:layout_gravity="center"
+            android:hint="성명"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:id="@+id/edt_username"
+            android:hint="사용자 이름"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/edt_pw"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:hint="비밀번호(6자 이상 입력해주세요)"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6BA7E3"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="가입"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="계정이 있으신가요? 로그인"
+            android:textColor="#428CD6"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>

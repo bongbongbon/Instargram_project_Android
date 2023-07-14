@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ImageView
+            android:layout_marginTop="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/text_logo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"/>
+
+        <EditText
+            android:id="@+id/edt_id"
+            android:layout_gravity="center"
+            android:hint="전화번호, 사용자 이름 또는 이메일"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/edt_pw"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:hint="비밀번호"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#6BA7E3"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="로그인"
+            android:layout_width="300dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="#838A91"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="또는"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:background="#838A91"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:textColor="#428CD6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="계정이 없으신가요? 가입하기"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>

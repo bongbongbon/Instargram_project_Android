@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Project_Instargram" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="android:statusBarColor">@color/main_color</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="actionBarSize">50dp</item>
+
+
+
+    </style>
+
+    <style name="Theme.Project_Instargram" parent="Base.Theme.Project_Instargram" />
+</resources>
